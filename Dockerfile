@@ -1,7 +1,7 @@
-FROM nginx
-MAINTAINER swathi
-LABEL This is beauty products application
+FROM nginx:alpine
+RUN rm -f /usr/share/nginx/html/*
+COPY . /usr/share/nginx/html/
+RUN chown -R nginx:nginx /usr/share/nginx/html/
 EXPOSE 80
-COPY . .
-WORKDIR BeautyApp
-COPY index.html /usr/share/nginx/html 
+USER nginx
+CMD ["nginx", "-g", "daemon off;"]
