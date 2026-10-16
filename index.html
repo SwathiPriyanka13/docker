@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blush & Bloom | Beauty</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #34222c;
+      background: #fff8f5;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: white;
+    }
+
+    .logo {
+      color: #d94f83;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 22px;
+      color: #533744;
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 80px 8%;
+      background: linear-gradient(120deg, #ffd5df, #ffe9b8);
+      text-align: center;
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 13px 24px;
+      border-radius: 28px;
+      background: #d94f83;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .products {
+      padding: 48px 8%;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 22px;
+      margin-top: 28px;
+    }
+
+    .card {
+      padding: 24px;
+      border-radius: 18px;
+      background: white;
+      box-shadow: 0 8px 24px #6b354010;
+    }
+
+    .product-image {
+      display: grid;
+      place-items: center;
+      height: 150px;
+      border-radius: 14px;
+      background: #ffe3ec;
+      font-size: 4rem;
+    }
+
+    .card:nth-child(2) .product-image { background: #fff0c9; }
+    .card:nth-child(3) .product-image { background: #e4f3df; }
+
+    .price {
+      color: #d94f83;
+      font-weight: bold;
+    }
+
+    footer {
+      padding: 22px;
+      background: #533744;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Blush & Bloom</div>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <h1>Feel good in your own glow</h1>
+      <p>Colourful beauty essentials made for your everyday routine.</p>
+      <a class="button" href="#products">Shop the collection</a>
+    </section>
+
+    <section class="products" id="products">
+      <h2>Customer favourites</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="product-image" aria-label="Lip gloss">💄</div>
+          <h3>Berry Glow Lip Oil</h3>
+          <p>A soft shine with a hint of berry.</p>
+          <p class="price">$14.00</p>
+        </article>
+
+        <article class="card">
+          <div class="product-image" aria-label="Face cream">🧴</div>
+          <h3>Peachy Moisture Cream</h3>
+          <p>A fresh, lightweight daily moisturizer.</p>
+          <p class="price">$22.00</p>
+        </article>
+
+        <article class="card">
+          <div class="product-image" aria-label="Blush compact">🌸</div>
+          <h3>Rosy Cheeks Blush</h3>
+          <p>A playful pop of colour for your cheeks.</p>
+          <p class="price">$18.00</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Blush & Bloom · Beauty for every day</footer>
+</body>
+</html>
